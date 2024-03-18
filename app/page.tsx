@@ -15,10 +15,10 @@ export default function Home() {
   }
   return (
     <div>
-      <BackgroundGradientAnimation>
-        <div className="flex flex-col gap-7 align-items m-32 justify-center items-center">
-            <p className="text-white text-7xl text-transparent font-semibold drop-shadow-lg"> Hi, I'm <span className="font-bold">Varoon.</span></p>
-            <p className="text-white text-2xl w-1/2 text-center">I'm a <span className="font-semibold">software developer</span> and CS student at Georgia Tech with a passion for building beautiful products.</p>
+      <div className="bg-gradient-to-r from-violet-600 to-indigo-600">
+        <div className="flex flex-col gap-7 align-items pt-20 pb-20 justify-center items-center">
+            <p className="text-white text-7xl text-transparent font-semibold drop-shadow-lg text-center"> Hi, I&apos;m <span className="font-bold">Varoon.</span></p>
+            <p className="text-white text-2xl w-full md:w-1/2 text-center">I&apos;m a <span className="font-semibold">software developer</span> and CS student at Georgia Tech with a passion for building beautiful products.</p>
             <div className="flex flex-row gap-3 mb-5">
               <button className="bg-blue-400 p-2 font-semibold hover:scale-110 transition transition-300 ease-in-out text-white inline-flex items-center space-x-2 rounded" onClick={() => window.open('https://twitter.com/varoonkodithala', '_blank')}>
                 <svg className="w-7 h-7 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
@@ -40,12 +40,12 @@ export default function Home() {
               </svg>
             </button>
         </div>
-      </BackgroundGradientAnimation>
-      <div id="projects" className="flex flex-col gap-5 justify-center items-center mt-10 mb-10">
+      </div>
+      <div id="projects" className="flex flex-col gap-5 py-10 justify-center items-center mx-2">
         <p className="text-slate-800 text-5xl font-extrabold">Projects</p>
-        <p className="text-slate-800 text-xl">Some projects that I've developed over the years.</p>
-        <div className="flex flex-row gap-7">
-          <CardComponent title="The Origin" description="An AI-powered newsletter service that generates highly personalized reports of recent developments in users’ areas of interest." languages={["JavaScript", "React.js", "TailwindCSS", "Flask", "Langchain", "Vercel"]} img_href="/origin-pic.png" />
+        <p className="text-slate-800 text-xl text-center">Some projects that I&apos;ve developed over the years.</p>
+        <div className="flex flex-col lg:flex-row gap-7">
+          <CardComponent title="The Origin" description="An AI-powered newsletter service that generates highly personalized reports of recent developments in users&apos; areas of interest." languages={["JavaScript", "React.js", "TailwindCSS", "Flask", "Langchain", "Vercel"]} img_href="/origin-pic.png" />
           <CardComponent title="Rewind" description="A dynamic full-stack application that allowed users to effortlessly log daily entries on-the-go simply by texting an SMS number." languages={["JavaScript", "React.js", "MongoDB", "Flask", "AWS"]} img_href="/dayze.jpg" />
           <CardComponent title="Weather-Viz" description="A VR application that brings weather forecasts to life through immersive 3D visualizations. Competed in ImmerseGT and presented to writers from Forbes." languages={["Unity", "Python", "C#", "Meshroom", "Blender", "Oculus"]} img_href="/weather-viz.png" />
         </div> 

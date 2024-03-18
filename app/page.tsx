@@ -15,8 +15,8 @@ export default function Home() {
   }
   return (
     <div>
-      <BackgroundGradientAnimation>
-        <div className="flex flex-col gap-7 align-items m-32 justify-center items-center">
+      <div className="bg-gradient-to-r from-violet-600 to-indigo-600">
+        <div className="flex flex-col gap-7 align-items pt-20 pb-20 justify-center items-center">
             <p className="text-white text-7xl text-transparent font-semibold drop-shadow-lg text-center"> Hi, I&apos;m <span className="font-bold">Varoon.</span></p>
             <p className="text-white text-2xl w-full md:w-1/2 text-center">I&apos;m a <span className="font-semibold">software developer</span> and CS student at Georgia Tech with a passion for building beautiful products.</p>
             <div className="flex flex-row gap-3 mb-5">
@@ -40,10 +40,10 @@ export default function Home() {
               </svg>
             </button>
         </div>
-      </BackgroundGradientAnimation>
-      <div id="projects" className="flex flex-col gap-5 justify-center items-center mt-10 mb-10">
+      </div>
+      <div id="projects" className="flex flex-col gap-5 py-10 justify-center items-center mx-2">
         <p className="text-slate-800 text-5xl font-extrabold">Projects</p>
-        <p className="text-slate-800 text-xl">Some projects that I&apos;ve developed over the years.</p>
+        <p className="text-slate-800 text-xl text-center">Some projects that I&apos;ve developed over the years.</p>
         <div className="flex flex-col lg:flex-row gap-7">
           <CardComponent title="The Origin" description="An AI-powered newsletter service that generates highly personalized reports of recent developments in users&apos; areas of interest." languages={["JavaScript", "React.js", "TailwindCSS", "Flask", "Langchain", "Vercel"]} img_href="/origin-pic.png" />
           <CardComponent title="Rewind" description="A dynamic full-stack application that allowed users to effortlessly log daily entries on-the-go simply by texting an SMS number." languages={["JavaScript", "React.js", "MongoDB", "Flask", "AWS"]} img_href="/dayze.jpg" />

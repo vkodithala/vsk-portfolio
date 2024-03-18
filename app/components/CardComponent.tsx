@@ -16,7 +16,7 @@ export function CardComponent({ title, description, languages, img_href  }: Card
                     src={img_href}
                     width={500}
                     height={10}
-                    className="opacity-50 hover:opacity-100 h-80"
+                    className="opacity-50 h-80"
                     alt="Picture of the author"
                 />
                 <div className="m-5">
